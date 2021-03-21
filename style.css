@@ -1,0 +1,422 @@
+html{
+    scroll-behavior: smooth;
+
+}
+body{
+    background-color: rgb(248, 248, 248);
+    font-family: 'Vazir', sans-serif;
+}
+
+.container{
+    padding: 150px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup{
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px ;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 7px 17px 2px rgb(240, 240, 240);
+}
+
+h1{
+    margin: 30px auto 60px auto;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.welcome{
+    margin: 0 auto 0 auto;
+    color: rgb(41, 41, 41);
+    line-height: 1.5rem;
+}
+.holder_btn{
+    display: flex;
+    justify-content: center;
+}
+
+.start_btn{
+    display: block;
+    margin: 0 10px 0 0;
+    background-color: #f06292;
+    color: white;
+    font-size: 1.1rem;
+    padding: 7px 15px;
+    border-radius: 4px;
+    transition: 0.3s;
+    font-family: 'Vazir', sans-serif;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.start_btn:hover{
+    background-color: #ec407a;
+}
+.back_btn{
+    display: block;
+    margin: 0 auto;
+    background-color: #eeeeee;
+    color: black;
+    font-size: 1.1rem;
+    padding: 7px 15px;
+    border-radius: 4px;
+    transition: 0.3s;
+    font-family: 'Vazir', sans-serif;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.back_btn:hover{
+    background-color: #e0e0e0;
+}
+
+.minutes{
+    margin: 60px 0 60px 0;
+    text-align: center;
+}
+
+.minutes span{
+    padding: 8px 10px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 4px;
+
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.pForm{
+    margin: 0px 0 15px 0px ;
+    line-height: 1.5rem;
+}
+
+.checkbox{
+    width: 19px;
+    height: 19px;
+    margin-left: 8px;
+}
+
+.checkboxHolder{
+    margin: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+label{
+    cursor: pointer;
+    line-height: 1.5;
+}
+
+h2{
+    margin: 50px auto 60px auto;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.inputText{
+    font-family: 'Vazir', sans-serif;
+    width: 220px;
+    padding: 10px 40px 10px 10px;
+    outline: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgb(168, 167, 167);
+}
+.inputText:focus::placeholder{
+    color: rgb(59, 59, 59);    
+}
+.inputText:focus{
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+
+
+
+
+.personal_info{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap : 50px ;
+    
+
+}
+
+.icon{
+    position: relative;
+    right: 20px;
+    bottom: -2px;
+    color: #000000;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out
+}
+
+.parent:hover > .icon{
+    color: #f06292;
+    /* transform: rotateZ(360deg); */
+}
+
+form{
+    margin-bottom: 60px;
+}
+
+.labelArea{
+    display: block;
+    margin-bottom: 10px;
+}
+
+textarea{
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    font-family: 'Vazir', sans-serif;
+    border-radius: 6px 0 6px 0  ;
+    outline: none;
+    border: 2px solid rgb(153, 153, 153);
+    transition: 0.2s;
+    margin-bottom: 15px;
+    resize: none;
+}
+
+textarea:focus{
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.gridBusinessObjective {
+    display: grid;
+    grid-template-areas: 
+    'b m'
+    'b s';
+}
+
+.Business{
+    grid-area: b;
+}
+
+.Marketing{
+    grid-area: m;
+}
+
+.Sales{
+    grid-area: s;
+}
+
+label{
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out
+}
+
+.focusTextarea:hover > label{
+    color: #ec407a;
+}
+.focusTextarea i{
+    padding-left: 5px;
+}
+
+
+.gridProductAttributes{
+}
+
+.rowInput {
+    margin: 50px 0 0px 0;
+}
+
+.rowInput > input{
+    width: 80%;
+}
+
+.margini{
+    margin-top: 80px;
+}
+
+.gridMarket{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+
+}
+
+.margin_bottom_Textarea{
+    margin-bottom: 10px;
+}
+
+
+.textareaGridItem{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.anchorLink{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.smallText{
+    font-size: 0.8rem;
+}
+
+.flexMarket2{
+    display: flex;
+    margin-bottom: 40px;
+}
+.flexMarket2 > .focusTextarea{
+    margin-left: 50px;
+}
+
+#Geographical{
+    width: 90%;
+}
+#Other_Competitors{
+    width: 90%;
+    margin-bottom: 30px !important
+}
+#Further_Details{
+    width: 180%;
+    grid-area:f;
+
+}
+
+.gridMarket2{
+    display: grid;
+    grid-template-areas: 
+    'c d'
+    'r k'
+    'f f';
+}
+
+#Consumers{
+    grid-area: c;
+}
+#Decision_Makers{
+    grid-area: d;
+}
+#Recommenders{
+    grid-area: r;
+}
+#KOL{
+    grid-area: k;
+}
+
+
+.gridStrategies{
+    display: grid;
+    gap: 25px;
+    grid-template-areas: 
+    'c c'
+    'b i'
+    'k k'
+    'm m'
+    't t'
+;
+}
+
+/* Communication_Objective */
+#item1{ 
+    grid-area: c;
+}
+
+/* Brand_Personality */
+#item2{
+    grid-area: b;
+}
+
+/* Brand_Image */
+#item3{
+    grid-area: i;
+}
+
+/* Key_Message */
+#item4{
+    grid-area: k;
+}
+
+/* Media_Recommendation */
+#item5{
+    grid-area: m;
+}
+
+/* Tools */
+#item6{
+    grid-area: t;
+}
+
+#item1 > textarea{
+    width: 91%;
+}
+#item4 > textarea{
+    width: 91%;
+}
+#item5 > textarea{
+    width: 91%;
+}
+#item6 > textarea{
+    width: 91%;
+}
+
+.gridExecution{
+    display: grid;
+    grid-template-areas: 
+    'd d'
+    'l l'
+    'b a'
+    'm m'
+    'h h'
+}
+
+/* Deliverables */
+#item11{ 
+    grid-area: d;
+}
+
+/* Deadline */
+#item22{
+    grid-area: l;
+}
+
+/* Budget */
+#item33{
+    grid-area: b;
+}
+
+/* Attachment */
+#item44{
+    grid-area: a;
+}
+
+/* Mandatories */
+#item55{
+    grid-area: m;
+}
+
+/* Hints */
+#item66{
+    grid-area: h;
+}
+
+#item11 > textarea{
+    width: 91%;
+}
+#item22 > textarea{
+    width: 91%;
+}
+#item55 > textarea{
+    width: 91%;
+}
+#item66 > textarea{
+    width: 91%;
+}
