@@ -48,35 +48,35 @@
                 
                 <h2>مشخصات تکمیل کننده فرم</h2>
 
-                <div class="personal_info">
+                <div class="personal_info moveToRight">
                     <div class="parent">
                         <i class="icon fas fa-user"></i>
-                        <input type="text" class="inputText" id="name" placeholder="نام و نام خانوادگی">
+                        <input type="text" class="inputText" id="name" placeholder="نام و نام خانوادگی" >
                     </div>
 
                     <div class="parent">
                         <i class="icon fas fa-user-tag"></i>
-                        <input type="text" class="inputText" id="role" placeholder="سمت سازمانی">
+                        <input type="text" class="inputText" id="role" placeholder="سمت سازمانی" >
                     </div>
                     
                     <div class="parent">
                         <i class="icon fas fa-map-marker-alt"></i>
-                        <input type="text" class="inputText" id="address" placeholder="نشانی">
+                        <input type="text" class="inputText" id="address" placeholder="نشانی" >
                     </div>
                     
                     <div class="parent">
                         <i class="icon fas fa-phone-square"></i>
-                        <input type="text" class="inputText" id="phone_number" placeholder="تلفن و موبایل">
+                        <input type="text" class="inputText" id="phone_number" placeholder="تلفن و موبایل" >
                     </div>
                     
                     <div class="parent">
                         <i class="icon fas fa-desktop"></i>
-                        <input type="text" class="inputText" id="website" placeholder="سایت اختصاصی مربوط به شرکت / برند">
+                        <input type="text" class="inputText" id="website" placeholder="سایت اختصاصی مربوط به شرکت / برند" >
                     </div>
                     
                     <div class="parent">
                         <i class="icon fas fa-envelope"></i>
-                        <input type="email" class="inputText" id="mail" placeholder="ایمیل">
+                        <input type="email" class="inputText" id="mail" placeholder="ایمیل" >
                     </div>
                 </div>
 
@@ -85,6 +85,7 @@
                 <a class="anchorLink" href="#0"><button class="back_btn">بازگشت</button></a>
                 <a class="anchorLink" href="#2"><button class="start_btn">صفحه بعد</button></a>        
             </div>
+
 
         </div>
     </div>
@@ -115,7 +116,7 @@
                 <h2>ویژگی های محصول</h2>
                 <div class="gridProductAttributes">
 
-                    <div class="personal_info">
+                    <div class="personal_info moveToRight">
                         <div class="parent">
                             <i class="icon fas fa-copyright"></i>
                             <input type="text" class="inputText" id="BrandName" placeholder="نام محصول / برند (Product / Brand Name)">
@@ -192,10 +193,11 @@
         </div>
     </div>
 
+
     <div class="container" id="3">
         <div class="signup">
             <h2>بازار</h2>
-            <p class="pForm" style="font-weight:500; ">
+            <p class="pForm beSmallFont" style="font-weight:500; ">
                 <i class="fas fa-caret-square-down"></i>
                  رقبای اصلی شناخته شده (Main Competitors) </p>
             <form action="#"> 
@@ -234,6 +236,7 @@
             </div>
         </div>
     </div>
+
 
     <div class="container" id="4">
         <div class="signup">
@@ -308,6 +311,7 @@
         </div>
     </div>
 
+    
     <div class="container" id="5">
         <div class="signup">
             <h2>اهداف و استراتژی های ارتباطی</h2>
@@ -371,10 +375,20 @@
                         <textarea id="Deadline" cols="40" rows="5" ></textarea>
                     </div>
                     <div class="focusTextarea " id="item33">
-                        <label class="labelArea" for="Budget">
+                        <label class="labelArea margini33" for="Budget">
                             بودجه در دسترس (Budget)
                         </label>
-                        <textarea id="Budget" cols="40" rows="5" ></textarea>
+                        <div class="parent divBudget">
+                            <i class="icon fas fa-money-bill-alt"></i>
+                            <input type="text" class="inputText" id="Budget1" placeholder="قطعی (تومان)">
+                        </div>
+
+                        <div class="parent divBudget">
+                            <i class="icon far fa-money-bill-alt"></i>
+                            <input type="text" class="inputText" id="Budget2" placeholder="حدودی (تومان)">
+                        </div>
+
+                        
                     </div>
                     <div class="focusTextarea " id="item44">
                         <label class="labelArea" for="Attachment">پیوست ها (Attachment)</label>
@@ -401,7 +415,7 @@
                 <a class="anchorLink" href="#"><button class="start_btn">ثبت نهایی</button></a>        
             </div>
         </div>
-    </div>
+    </div> -->
 
     <script src="./script.js"></script>
 </body>

@@ -8,6 +8,7 @@ body{
 }
 
 .container{
+    margin: 0 auto;
     padding: 150px 0 0 0;
     display: flex;
     justify-content: center;
@@ -24,6 +25,7 @@ body{
 }
 
 h1{
+    line-height: 1.5;
     margin: 30px auto 60px auto;
     font-weight: bold;
     font-size: 2rem;
@@ -85,6 +87,40 @@ h1{
     background-color: rgb(245, 245, 245);
     border-radius: 4px;
 
+}
+
+
+
+
+@media(max-width : 769px){
+
+    .container{
+        padding: 80px 0 0 0;
+    }
+    .signup{
+        width: 75%;
+        padding: 20px ;
+    }
+    h1{
+        font-size: 1.9rem;
+    }
+}
+
+@media(max-width : 426px){
+    body{
+        background-color:cornflowerblue;
+    }
+    .container{
+        padding: 50px 0 0 0;
+    }
+    .signup{
+        width: 90%;
+        padding: 15px ;
+
+    }
+    h1{
+        font-size: 1.7rem;
+    }
 }
 
 .bold {
@@ -151,8 +187,9 @@ h2{
 }
 
 .icon{
+    width: 20px;
     position: relative;
-    right: 20px;
+    right: 25px;
     bottom: -2px;
     color: #000000;
     -webkit-transition: all .2s ease-out;
@@ -175,6 +212,88 @@ form{
     display: block;
     margin-bottom: 10px;
 }
+
+@media(max-width : 1025px){
+
+    .inputText{
+        width: 70%;
+        padding: 10px 28px 10px 10px;
+    }
+    .personal_info{
+
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap : 25px ;
+    }
+}
+@media(max-width : 769px){
+
+    h2{
+        font-size: 1.3rem;
+    }
+    .inputText{
+        width: 85%;
+        padding: 10px 40px 10px 10px;
+    }
+    .personal_info{
+
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap : 25px ;
+    }
+    .moveToRight{
+        position: relative;
+        right: -10px;
+    }
+}
+@media(max-width : 426px){
+
+    h2{
+        font-size: 1.3rem;
+    }
+    .inputText{
+        width: 75%;
+        padding: 10px 40px 10px 10px;
+        /* margin: 0 auto;
+        display: block; */
+    }
+    .personal_info{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap : 25px ;
+    }
+    .moveToRight{
+        position: relative;
+        right: -10px;
+    }
+}
+@media(max-width : 321px){
+
+    .container{
+        padding: 50px 0 0 0;
+    }
+    .signup{
+        width: 90%;
+        padding: 10px ;
+    }
+    .inputText{
+        width: 80%;
+        padding: 10px 40px 10px 10px;
+    }
+    .moveToRight{
+        right: 0px;
+    }
+    .icon{
+        width: 3px;
+        right: 0px;
+    }
+    .checkboxHolder{
+        font-size: 0.8rem;
+    }
+
+}
+
+
 
 textarea{
     padding: 10px 15px;
@@ -226,10 +345,6 @@ label{
     padding-left: 5px;
 }
 
-
-.gridProductAttributes{
-}
-
 .rowInput {
     margin: 50px 0 0px 0;
 }
@@ -241,6 +356,66 @@ label{
 .margini{
     margin-top: 80px;
 }
+
+@media(max-width : 1025px){
+    textarea{
+        width: 80%;
+    }
+    .labelArea{
+        font-size: 0.8rem;
+    }
+}
+@media(max-width : 769px){
+    .labelArea{
+        text-align: center;
+    }
+    textarea{
+        display: block;
+        margin-left:  auto;
+        margin-right:  auto;
+    }
+
+}
+@media(max-width : 426px){
+    .gridBusinessObjective {
+        display: grid;
+        grid-template-areas: 
+        'b b'
+        'm m'
+        's s';
+    }
+    .labelArea{
+        font-size: 0.9rem;
+        text-align: center;
+
+    }
+    textarea{
+        display: block;
+        margin-left:  auto;
+        margin-right:  auto;
+    }
+    .rowInput {
+        margin: 35px 0 0px 0;
+        position: relative;
+        right: -11px;
+    }
+
+}
+@media(max-width : 376px){
+    .rowInput {
+        position: relative;
+        display: flex;
+        align-items: baseline;
+    }
+}
+@media(max-width : 321px){
+    .rowInput {
+        display: block;
+        position: relative;
+        right: 0px;
+    }
+}
+
 
 .gridMarket{
     display: grid;
@@ -257,6 +432,31 @@ label{
 .textareaGridItem{
     width: 50%;
     margin: 0 auto;
+}
+
+
+
+@media(max-width : 426px){
+    .gridMarket{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 30px;
+    
+    }
+    .textareaGridItem{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .margin_bottom_Textarea{
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+@media(max-width : 321px){
+    .beSmallFont{
+        font-size: 0.9rem;
+    }
 }
 
 .anchorLink{
@@ -311,6 +511,45 @@ label{
 #KOL{
     grid-area: k;
 }
+
+
+@media(max-width : 1025px){
+    .flexMarket2 > .focusTextarea {
+        margin-left: 0px;
+    }
+    #Further_Details{
+        width: 168%;
+    }
+}
+@media(max-width : 769px){
+    #Further_Details{
+        width: 172%;
+    }
+}
+@media(max-width : 426px){
+    #Further_Details{
+        width: 81%;
+    }
+    .smallText{
+        font-size: 0.7rem;
+    }
+    .gridMarket2{
+ 
+        grid-template-areas: none;
+        grid-template-columns: auto;
+    }
+}
+@media(max-width : 376px){
+    .smallText{
+        font-size: 0.6rem;
+    }
+}
+@media(max-width : 321px){
+    .smallText{
+        font-size: 0.5rem;
+    }
+}
+
 
 
 .gridStrategies{
@@ -368,8 +607,36 @@ label{
     width: 91%;
 }
 
+@media(max-width : 426px){
+    .gridStrategies{
+        grid-template-areas: none;
+        display: flex;
+        flex-direction: column;
+    }
+    #item1 > textarea{
+        width: 80%;
+    }
+    #item4 > textarea{
+        width: 80%;
+    }
+    #item5 > textarea{
+        width: 80%;
+    }
+    #item6 > textarea{
+        width: 80%;
+    }
+}
+@media(max-width : 376px){
+
+}
+@media(max-width : 321px){
+
+}
+
+
 .gridExecution{
     display: grid;
+    grid-gap: 40px;
     grid-template-areas: 
     'd d'
     'l l'
@@ -420,3 +687,52 @@ label{
 #item66 > textarea{
     width: 91%;
 }
+
+#Budget1{
+    margin-bottom: 20px;
+}
+
+.margini33{
+    margin-bottom: 20px;
+}
+
+
+@media(max-width : 1025px){
+    .divBudget{
+        display: flex;
+        align-items: baseline;
+    }
+    .divBudget >i {
+        position: relative;
+        right: 17px;
+    }
+    
+}
+@media(max-width : 769px){
+
+}
+@media(max-width : 426px){
+
+}
+@media(max-width : 376px){
+.gridExecution{
+    display: flex;
+    flex-direction: column;
+}
+#item11 > textarea{
+    width: 80%;
+}
+#item22 > textarea{
+    width: 80%;
+}
+#item55 > textarea{
+    width: 80%;
+}
+#item66 > textarea{
+    width: 80%;
+}
+}
+@media(max-width : 321px){
+
+}
+
