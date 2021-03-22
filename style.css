@@ -107,9 +107,7 @@ h1{
 }
 
 @media(max-width : 426px){
-    body{
-        background-color:cornflowerblue;
-    }
+
     .container{
         padding: 50px 0 0 0;
     }
