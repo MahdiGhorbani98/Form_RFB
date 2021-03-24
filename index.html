@@ -12,410 +12,438 @@
     <title>Form RFB</title>
 </head>
 <body>
+    <header>
+        <!-- <p class="pHeader">نوار پیشرفت تکمیل فرم</p> -->
+        <div class="Countainer_Circles">
+            <i class="circleFar far fa-circle" id="Circle1"><span class="numberCircle" id="Number1">۱</span> </i>
+            <div class="line"></div>
+            <i class="circleFar far fa-circle" id="Circle2"><span class="numberCircle" id="Number2">۲</span> </i>
+            <div class="line"></div>
+            <i class="circleFar far fa-circle" id="Circle3"><span class="numberCircle" id="Number3">۳</span> </i>
+            <div class="line"></div>
+            <i class="circleFar far fa-circle" id="Circle4"><span class="numberCircle" id="Number4">۴</span> </i>
+            <div class="line"></div>
+            <i class="circleFar far fa-circle" id="Circle5"><span class="numberCircle" id="Number5">۵</span> </i>
+            <div class="line"></div>
+            <i class="circleFar far fa-circle" id="Circle6"><span class="numberCircle" id="Number6">۶</span> </i>
 
-    <div class="container" id="0">
-        <div class="signup">
-            <h1>مشترک عزیز سلام، خوش آمدید</h1>
-            <p class="welcome">تلاش علمی شما اگر همراه با آموزه های اخلاقی باشد، منشأ خیر و برکت است. بدانید که ما از اعماق قلب و وجودمان آرزومند موفقیت های شما هستیم، هرچند ممکن است برخی این را باور نداشته باشند. اما آنچه میدانم این است که هیات رئیسه دانشکده در اين خصوص در درگاه خداوند سربلند خواهند بود. </p>
-            <p class="minutes"><span>زمان لازم برای تکمیل فرم : 3 دقیقه</span></p>
-            <div class="holder_btn">           
-                 <a class="anchorLink" href="#1"><button class="start_btn">شروع</button></a>
+
+        </div>
+    </header>
+    <form id="form1" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfjkV_c1POgX4iX7EpfuvgdkvSFiW4AxF9oT2nhY1Lfx0Wf_Q/formResponse" target="_self" method="POST">
+        <div class="container" id="0">
+            <div class="signup">
+                <h1>مشترک عزیز سلام، خوش آمدید</h1>
+                <p class="welcome">تلاش علمی شما اگر همراه با آموزه های اخلاقی باشد، منشأ خیر و برکت است. بدانید که ما از اعماق قلب و وجودمان آرزومند موفقیت های شما هستیم، هرچند ممکن است برخی این را باور نداشته باشند. اما آنچه میدانم این است که هیات رئیسه دانشکده در اين خصوص در درگاه خداوند سربلند خواهند بود. </p>
+                <p class="minutes"><span>زمان لازم برای تکمیل فرم : 3 دقیقه</span></p>
+                <div class="holder_btn">           
+                     <a class="anchorLink" href="#1"><button type="button" onclick="StartProgress(Circle1)" class="start_btn">شروع</button></a>
+                </div>
             </div>
         </div>
-    </div>
-    
-    
-    <div class="container" id="1">
-        <div class="signup">
-            <h1>فرم درخواست بریف (RFB)</h1>
-            <p class="pForm">    <strong class="bold">توضیح</strong>
-                : در مورد چه نوع برندی نیاز به مشاوره دارید؟ آیا این برند مربوط به سازمان یا شرکت شماست، مربوط به یک شاخه از محصولات شرکت شماست که خود دارای برند ها و محصولات زیر مجموعه است و یا فقط مربوط به یک محصول با یک نام خاص است. لطفا این بریف را بر اساس همان گزینه ای که از مورد زیر انتخاب می کنید، تکمیل فرمایید.</p>
-            
-            <p class="bold pForm">نوع برند:</p>
-            <form action="#">
-                <div class="checkboxHolder">
-                    <input type="radio" class="checkbox" id="Umbrella_Brand" name="aa">
-                    <label for="Umbrella_Brand">برند سازمانی (Corporate / Umbrella Brand)</label>    
-                </div>
-                <div class="checkboxHolder">
-                    <input type="radio" class="checkbox" id="Category_Brand" name="aa">
-                    <label for="Category_Brand">برند گروه محصول (Product / Category Brand)</label>    
-                </div>
-                <div class="checkboxHolder">
-                    <input type="radio" class="checkbox" id="Model_Brand" name="aa">
-                    <label for="Model_Brand">برند محصول (Product / Model Brand)</label>    
-                </div>
+        
+        
+        <div class="container" id="1">
+            <div class="signup">
+                <h1>فرم درخواست بریف (RFB)</h1>
+                <p class="pForm">    <strong class="bold">توضیح</strong>
+                    : در مورد چه نوع برندی نیاز به مشاوره دارید؟ آیا این برند مربوط به سازمان یا شرکت شماست، مربوط به یک شاخه از محصولات شرکت شماست که خود دارای برند ها و محصولات زیر مجموعه است و یا فقط مربوط به یک محصول با یک نام خاص است. لطفا این بریف را بر اساس همان گزینه ای که از مورد زیر انتخاب می کنید، تکمیل فرمایید.</p>
                 
-                <h2>مشخصات تکمیل کننده فرم</h2>
-
-                <div class="personal_info moveToRight">
-                    <div class="parent">
-                        <i class="icon fas fa-user"></i>
-                        <input type="text" class="inputText" id="name" placeholder="نام و نام خانوادگی" >
+                <p class="bold pForm">نوع برند:</p>
+                <div class="formMargini">
+                    <div class="checkboxHolder">
+                        <input type="radio" class="checkbox" id="Umbrella_Brand" name="entry.1977051079" >
+                        <label for="Umbrella_Brand">برند سازمانی (Corporate / Umbrella Brand)</label>    
                     </div>
-
-                    <div class="parent">
-                        <i class="icon fas fa-user-tag"></i>
-                        <input type="text" class="inputText" id="role" placeholder="سمت سازمانی" >
+                    <div class="checkboxHolder">
+                        <input type="radio" class="checkbox" id="Category_Brand" name="entry.1468021624">
+                        <label for="Category_Brand">برند گروه محصول (Product / Category Brand)</label>    
                     </div>
-                    
-                    <div class="parent">
-                        <i class="icon fas fa-map-marker-alt"></i>
-                        <input type="text" class="inputText" id="address" placeholder="نشانی" >
+                    <div class="checkboxHolder">
+                        <input type="radio" class="checkbox" id="Model_Brand" name="entry.521745916">
+                        <label for="Model_Brand">برند محصول (Product / Model Brand)</label>    
                     </div>
                     
-                    <div class="parent">
-                        <i class="icon fas fa-phone-square"></i>
-                        <input type="text" class="inputText" id="phone_number" placeholder="تلفن و موبایل" >
+                    <h2 class="personal_info0">مشخصات تکمیل کننده فرم</h2>
+    
+                    <div class="personal_info moveToRight ">
+                        <div class="parent">
+                            <i class="icon fas fa-user"></i>
+                            <input name="entry.1949740520" type="text" class="inputText" id="name" placeholder="نام و نام خانوادگی" onchange="DestroyValid()" >
+                            <p class="validation1" id="valid1">لطفا فیلد بالا را پر کنید</p>
+                        </div>
+    
+                        <div class="parent">
+                            <i class="icon fas fa-user-tag"></i>
+                            <input name="entry.651646757" type="text" class="inputText" id="role" placeholder="سمت سازمانی" onchange="DestroyValid2(role,valid2)">
+                            <p class="validation1" id="valid2">لطفا فیلد بالا را پر کنید</p>
+                        </div>
+                        
+                        <div class="parent">
+                            <i class="icon fas fa-map-marker-alt"></i>
+                            <input type="text" class="inputText" id="address" placeholder="نشانی" onchange="DestroyValid2(address,valid3)">
+                            <p class="validation1" id="valid3">لطفا فیلد بالا را پر کنید</p>
+    
+                        </div>
+                        
+                        <div class="parent">
+                            <i class="icon fas fa-phone-square"></i>
+                            <input type="text" class="inputText" id="phone_number" placeholder="تلفن و موبایل" onchange="DestroyValid2(phone_number,valid4)">
+                            <p class="validation1" id="valid4">لطفا فیلد بالا را پر کنید (فقط عدد)</p>
+                        </div>
+                        
+                        <div class="parent">
+                            <i class="icon fas fa-envelope"></i>
+                            <input type="email" class="inputText" id="mail" placeholder="ایمیل" onchange="DestroyValid2(mail,valid5)">
+                            <p class="validation1" id="valid5">لطفا فیلد بالا را پر کنید</p>
+    
+                        </div>
+                        <div class="parent">
+                            <i class="icon fas fa-desktop"></i>
+                            <input type="text" class="inputText" id="website" placeholder="سایت اختصاصی مربوط به شرکت / برند" >
+                        </div>
+                        
                     </div>
-                    
-                    <div class="parent">
-                        <i class="icon fas fa-desktop"></i>
-                        <input type="text" class="inputText" id="website" placeholder="سایت اختصاصی مربوط به شرکت / برند" >
-                    </div>
-                    
-                    <div class="parent">
-                        <i class="icon fas fa-envelope"></i>
-                        <input type="email" class="inputText" id="mail" placeholder="ایمیل" >
-                    </div>
+    
                 </div>
-
-            </form>
-            <div class="holder_btn">
-                <a class="anchorLink" href="#0"><button class="back_btn">بازگشت</button></a>
-                <a class="anchorLink" href="#2"><button class="start_btn">صفحه بعد</button></a>        
+                <div class="holder_btn">
+                    <a class="anchorLink" href="#0"><button type="button" class="back_btn">بازگشت</button></a>
+                    <a class="anchorLink" href="#2"><button type="button" onclick="StartProgress(Circle2); TickedCircle(Circle1)" class="start_btn">صفحه بعد</button></a>        
+                </div>
+    
+    
             </div>
-
-
         </div>
-    </div>
-
-
-    <div class="container" id="2">
-        <div class="signup">
-            <h2>اهداف برند / شرکت</h2>
-            <form action="#">
-                <div class="gridBusinessObjective">
-                    <div class="Business focusTextarea">
-                        <label class="labelArea" for="Business_Background">پیشینه برند / شرکت (Business Background):</label>
-                        <textarea id="Business_Background" cols="40" rows="11" ></textarea>
-                    </div>
     
-                    <div class="Marketing focusTextarea">
-                        <label class="labelArea" for="Marketing_Objective">اهداف اصلی بازاریابی (Marketing Objective):</label>
-                        <textarea id="Marketing_Objective" cols="40" rows="4" ></textarea>
-                    </div>
     
-                    <div class="Sales focusTextarea">
-                        <label class="labelArea" for="Sales_Objective">اهداف مالی / فروش (Sales Objective):</label>
-                        <textarea id="Sales_Objective" cols="40" rows="4" ></textarea>
-                    </div>
-                    
-                </div>
-
-                <h2>ویژگی های محصول</h2>
-                <div class="gridProductAttributes">
-
-                    <div class="personal_info moveToRight">
-                        <div class="parent">
-                            <i class="icon fas fa-copyright"></i>
-                            <input type="text" class="inputText" id="BrandName" placeholder="نام محصول / برند (Product / Brand Name)">
-                        </div>
-    
-                        <div class="parent">
-                            <i class="icon fab fa-product-hunt"></i>
-                            <input type="text" class="inputText" id="ProductCategory" placeholder="نوع محصول (Product Category)">
-                        </div>
-                        
-                        <div class="parent">
-                            <i class="icon fas fa-file-alt"></i>
-                            <input type="text" class="inputText" id="SKU_s" placeholder="محصولات زیرگروه (SKU's)">
-                        </div>
-                        
-                        <div class="parent">
-                            <i class="icon fas fa-list-ol"></i>
-                            <input type="text" class="inputText" id="SKU" placeholder="تعداد SKU">
-                        </div>
-
-                    </div>
-
-                    
-                    <div class="parent rowInput">
-                        <i class="icon fas fa-stream"></i>
-                        <input type="text" class="inputText" id="SKU_Name" placeholder="نام و نوع محصولات زیر گروه (SKU Name & Category)">
-                    </div>
-                    
-                    <div class="parent rowInput">
-                        <i class="icon fas fa-calendar-check"></i>
-                        <input type="email" class="inputText" id="BrandBenfit" placeholder="مزایای محصول / برند (Product / Brand Benfit)">
-                    </div>
-
-                    <div class="personal_info margini">
-                        <div class=" focusTextarea">
-                            <label class="labelArea" for="ca">مزیت رقابتی (CA)</label>
-                            <textarea id="ca" cols="40" rows="4" ></textarea>
+        <div class="container" id="2">
+            <div class="signup">
+                <h2>اهداف برند / شرکت</h2>
+                <div class="formMargini">
+                    <div class="gridBusinessObjective">
+                        <div class="Business focusTextarea">
+                            <label class="labelArea" for="Business_Background">پیشینه برند / شرکت (Business Background):</label>
+                            <textarea name="entry.399596146" id="Business_Background" cols="40" rows="11" ></textarea>
                         </div>
         
-                        <div class=" focusTextarea">
-                            <label class="labelArea" for="Value_propositions">ارزش پیشنهادی (Value propositions)</label>
-                            <textarea id="Value_propositions" cols="40" rows="4" ></textarea>
+                        <div class="Marketing focusTextarea">
+                            <label class="labelArea" for="Marketing_Objective">اهداف اصلی بازاریابی (Marketing Objective):</label>
+                            <textarea id="Marketing_Objective" cols="40" rows="4" ></textarea>
                         </div>
         
-                        <div class=" focusTextarea">
-                            <label class="labelArea" for="Claim">وعده ها و ادعاهای محصول (Promise & Claim)</label>
-                            <textarea id="Claim" cols="40" rows="4" ></textarea>
-                        </div>
-
-                        <div class=" focusTextarea">
-                            <label class="labelArea" for="Problem">مشکلات و عوارض محصول (Key issue / Problem)</label>
-                            <textarea id="Problem" cols="40" rows="4" ></textarea>
-                        </div>
-
-                        <div class=" focusTextarea">
-                            <label class="labelArea" for="Reason">دلایل اصلی انتخاب محصول (Reason Why / Reason to Believe)</label>
-                            <textarea id="Reason" cols="40" rows="4" ></textarea>
+                        <div class="Sales focusTextarea">
+                            <label class="labelArea" for="Sales_Objective">اهداف مالی / فروش (Sales Objective):</label>
+                            <textarea id="Sales_Objective" cols="40" rows="4" ></textarea>
                         </div>
                         
-                        <div class=" focusTextarea">
-                            <label class="labelArea" for="Support">پشتیبانی خدمات پس از فروش و ... (Support & Warranty)</label>
-                            <textarea id="Support" cols="40" rows="4" ></textarea>
-                        </div>
                     </div>
-
-                </div>
-            </form>
-
-            <div class="holder_btn">
-                <a class="anchorLink" href="#1"><button class="back_btn">بازگشت</button></a>
-                <a class="anchorLink" href="#3"><button class="start_btn">صفحه بعد</button></a>        
-            </div>
-
-        </div>
-    </div>
-
-
-    <div class="container" id="3">
-        <div class="signup">
-            <h2>بازار</h2>
-            <p class="pForm beSmallFont" style="font-weight:500; ">
-                <i class="fas fa-caret-square-down"></i>
-                 رقبای اصلی شناخته شده (Main Competitors) </p>
-            <form action="#"> 
-                <div class="gridMarket">
-                    <div class="focusTextarea ">
-                        <label for="enemy1" class="" ><i class="fas fa-caret-left"></i>نام رقیب ۱ :</label>
-                        <input type="text" id="enemy1" class="inputText margin_bottom_Textarea" placeholder="نام رقیب"><br>
-                        <textarea id="Attributes1" cols="42" rows="5" placeholder="ویژگی ها و ادعاها"></textarea>
-                    </div>
-                    <div class="focusTextarea ">
-                        <label for="enemy2" class="" ><i class="fas fa-caret-left"></i>نام رقیب ۲ :</label>
-                        <input type="text" id="enemy2" class="inputText margin_bottom_Textarea" placeholder="نام رقیب"><br>
-                        <textarea id="Attributes2" cols="42" rows="5" placeholder="ویژگی ها و ادعاها"></textarea>
-                    </div>
-                    <div class="focusTextarea ">
-                        <label for="enemy3" class="" ><i class="fas fa-caret-left"></i>نام رقیب ۳ :</label>
-                        <input type="text" id="enemy3" class="inputText margin_bottom_Textarea" placeholder="نام رقیب"><br>
-                        <textarea id="Attributes3" cols="42" rows="5" placeholder="ویژگی ها و ادعاها"></textarea>
-                    </div>
-                    <div class="focusTextarea ">
-                        <label for="enemy4" class="" ><i class="fas fa-caret-left"></i>نام رقیب ۴ :</label>
-                        <input type="text" id="enemy4" class="inputText margin_bottom_Textarea" placeholder="نام رقیب"><br>
-                        <textarea id="Attributes4" cols="42" rows="5" placeholder="ویژگی ها و ادعاها"></textarea>
-                    </div>
-                    
-                </div>
-                <div class="focusTextarea textareaGridItem ">
-                    <label for="enemy5" class="" ><i class="fas fa-caret-left"></i>نام رقیب ۵ :</label>
-                    <input type="text" id="enemy5" class="inputText margin_bottom_Textarea" placeholder="نام رقیب"><br>
-                    <textarea id="Attributes5" cols="42" rows="5" placeholder="ویژگی ها و ادعاها"></textarea>
-                </div>
-            </form>
-            <div class="holder_btn">
-                <a class="anchorLink" href="#2"><button class="back_btn">بازگشت</button></a>
-                <a class="anchorLink" href="#4"><button class="start_btn">صفحه بعد</button></a>        
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container" id="4">
-        <div class="signup">
-            <h2>بازار</h2>
-            <form action="">
-                <div >
-                    <div class="focusTextarea ">
-                        <label class="labelArea" for="Other_Competitors">رقبای دیگر / فرعی (Other Competitors)</label>
-                        <textarea id="Other_Competitors" cols="45" rows="5" ></textarea>
-                    </div>
-
-
-
-                    <p class="pForm" style="font-weight:500; ">
-                        <i class="fas fa-caret-square-down"></i>
-                        بازار هدف مشتریان (Customer Target) : <span class="smallText">(دسته بندی کلی مشتریان بالقوه و بالفعل)</span></p>
-
-                    <div class="focusTextarea ">
-                        <label class="labelArea" for="Geographical">
-                            <pre><i class="fas fa-caret-left"></i>جغرافیایی و دموگرافیک:
-<span class="smallText">(سن، جنسیت، وضعیت تاهل، طبقه اقتصادی اجتماعی، شغل، میزان تحصیلات و ...)</span></pre>
-                        </label>
-                        <textarea id="Geographical" cols="40" rows="5" ></textarea>
-                    </div>
-
-                    <div class="flexMarket2">
-                        <div class="focusTextarea ">
-                            <label class="labelArea" for="Psychological">
-                                <i class="fas fa-caret-left"></i>روانشناختی
-                            </label>
-                            <textarea id="Psychological" cols="40" rows="5" ></textarea>
+    
+                    <h2>ویژگی های محصول</h2>
+                    <div class="gridProductAttributes">
+    
+                        <div class="personal_info moveToRight">
+                            <div class="parent">
+                                <i class="icon fas fa-copyright"></i>
+                                <input type="text" class="inputText" id="BrandName" placeholder="نام محصول / برند (Product / Brand Name)">
+                            </div>
+        
+                            <div class="parent">
+                                <i class="icon fab fa-product-hunt"></i>
+                                <input type="text" class="inputText" id="ProductCategory" placeholder="نوع محصول (Product Category)">
+                            </div>
+                            
+                            <div class="parent">
+                                <i class="icon fas fa-file-alt"></i>
+                                <input type="text" class="inputText" id="SKU_s" placeholder="محصولات زیرگروه (SKU's)">
+                            </div>
+                            
+                            <div class="parent">
+                                <i class="icon fas fa-list-ol"></i>
+                                <input type="text" class="inputText" id="SKU" placeholder="تعداد SKU">
+                            </div>
+    
                         </div>
     
-                        <div class="focusTextarea ">
-                            <label class="labelArea" for="Behavioral">
-                                <i class="fas fa-caret-left"></i>رفتاری
-                            </label>
-                            <textarea id="Behavioral" cols="40" rows="5" ></textarea>
+                        
+                        <div class="parent rowInput">
+                            <i class="icon fas fa-stream"></i>
+                            <input type="text" class="inputText" id="SKU_Name" placeholder="نام و نوع محصولات زیر گروه (SKU Name & Category)">
                         </div>
-                    </div>
-
-                    <div class="gridMarket2">
-                        <div class="focusTextarea ">
-                            <label class="labelArea" for="Consumers">مصرف کنندگان (Consumers)</label>
-                            <textarea id="Consumers" cols="40" rows="5" ></textarea>
+                        
+                        <div class="parent rowInput">
+                            <i class="icon fas fa-calendar-check"></i>
+                            <input type="email" class="inputText" id="BrandBenfit" placeholder="مزایای محصول / برند (Product / Brand Benfit)">
                         </div>
-                        <div class="focusTextarea ">
-                            <label class="labelArea" for="Decision_Makers">تصمیم گیرندگان (Decision Makers)</label>
-                            <textarea id="Decision_Makers" cols="40" rows="5" ></textarea>
-                        </div>
-                        <div class="focusTextarea ">
-                            <label class="labelArea" for="Recommenders">توصیه کنندگان و تاییدکنندگان (Recommenders)</label>
-                            <textarea id="Recommenders" cols="40" rows="5" ></textarea>
-                        </div>
-                        <div class="focusTextarea ">
-                            <label class="labelArea" for="KOL">رهبران فکری اصلی (KOL)</label>
-                            <textarea id="KOL" cols="40" rows="5" ></textarea>
-                        </div>
-                        <div class="focusTextarea ">
-                            <label class="labelArea" for="Further_Details">توضیحات تکمیلی در مورد وضعیت بازار، رقبا، مشتریان و...</label>
-                            <textarea id="Further_Details" cols="40" rows="5" ></textarea>
-                        </div>
-                    </div>
-
-
-                </div>
-            </form>
-            <div class="holder_btn">
-                <a class="anchorLink" href="#3"><button class="back_btn">بازگشت</button></a>
-                <a class="anchorLink" href="#5"><button class="start_btn">صفحه بعد</button></a>        
-            </div>
-        </div>
-    </div>
-
     
-    <div class="container" id="5">
-        <div class="signup">
-            <h2>اهداف و استراتژی های ارتباطی</h2>
-            <form action="">
-                <div class="gridStrategies">
-                    <div class="focusTextarea " id="item1">
-                        <label class="labelArea" for="Communication_Objective">اهداف ارتباطی (Communication Objective)</label>
-                        <textarea id="Communication_Objective" cols="40" rows="5" ></textarea>
-                    </div>
-                    <div class="focusTextarea " id="item2">
-                        <label class="labelArea" for="Brand_Personality">
-                            شخصیت و هویت برند (Brand Personality)
-                            <br><span class="smallText">(هویت و شخصیت ایده؛ آنچه میخواهیم برند را به آن بشناسند)
-                            </span>
-                        </label>
-                        <textarea id="Brand_Personality" cols="40" rows="5" ></textarea>
-                    </div>
-                    <div class="focusTextarea " id="item3">
-                        <label class="labelArea" for="Brand_Image">
-                            تصویر ذهنی فعلی برند (Brand Image)
-                            <br><span class="smallText">(آنچه که مشتریان به طور کل در مورد برند می اندیشند و می گویند)
-                            </span>
-                        </label>
-                        <textarea id="Brand_Image" cols="40" rows="5" ></textarea>
-                    </div>
-                    <div class="focusTextarea " id="item4">
-                        <label class="labelArea" for="Key_Message">لحن پیشنهادی برای پیام های ارتباطی (Key Message / Tone of Message)</label>
-                        <textarea id="Key_Message" cols="40" rows="5" ></textarea>
-                    </div>
-                    <div class="focusTextarea " id="item5">
-                        <label class="labelArea" for="Media_Recommendation">رسانه های پیشنهادی (Media Recommendation)</label>
-                        <textarea id="Media_Recommendation" cols="40" rows="4" ></textarea>
-                    </div>
-                    <div class="focusTextarea " id="item6">
-                        <label class="labelArea" for="Tools">ابزارها و رسانه های استفاده شده تا کنون (Tools & Media History)</label>
-                        <textarea id="Tools" cols="40" rows="4" ></textarea>
+                        <div class="personal_info margini">
+                            <div class=" focusTextarea">
+                                <label class="labelArea" for="ca">مزیت رقابتی (CA)</label>
+                                <textarea id="ca" cols="40" rows="4" ></textarea>
+                            </div>
+            
+                            <div class=" focusTextarea">
+                                <label class="labelArea" for="Value_propositions">ارزش پیشنهادی (Value propositions)</label>
+                                <textarea id="Value_propositions" cols="40" rows="4" ></textarea>
+                            </div>
+            
+                            <div class=" focusTextarea">
+                                <label class="labelArea" for="Claim">وعده ها و ادعاهای محصول (Promise & Claim)</label>
+                                <textarea id="Claim" cols="40" rows="4" ></textarea>
+                            </div>
+    
+                            <div class=" focusTextarea">
+                                <label class="labelArea" for="Problem">مشکلات و عوارض محصول (Key issue / Problem)</label>
+                                <textarea id="Problem" cols="40" rows="4" ></textarea>
+                            </div>
+    
+                            <div class=" focusTextarea">
+                                <label class="labelArea" for="Reason">دلایل اصلی انتخاب محصول (Reason Why / Reason to Believe)</label>
+                                <textarea id="Reason" cols="40" rows="4" ></textarea>
+                            </div>
+                            
+                            <div class=" focusTextarea">
+                                <label class="labelArea" for="Support">پشتیبانی خدمات پس از فروش و ... (Support & Warranty)</label>
+                                <textarea id="Support" cols="40" rows="4" ></textarea>
+                            </div>
+                        </div>
+    
                     </div>
                 </div>
-            </form>
-            <div class="holder_btn">
-                <a class="anchorLink" href="#4"><button class="back_btn">بازگشت</button></a>
-                <a class="anchorLink" href="#6"><button class="start_btn">صفحه بعد</button></a>        
+    
+                <div class="holder_btn">
+                    <a class="anchorLink" href="#1"><button type="button" class="back_btn">بازگشت</button></a>
+                    <a class="anchorLink" href="#3"><button type="button" onclick="StartProgress(Circle3);TickedCircle(Circle2)" class="start_btn">صفحه بعد</button></a>        
+                </div>
+    
             </div>
         </div>
-    </div>
-
-
-    <div class="container" id="6">
-        <div class="signup">
-            <h2>فرآیندهای اجرایی</h2>
-            <form action="">
-
-                <div class="gridExecution">
-                    <div class="focusTextarea " id="item11">
-                        <label class="labelArea" for="Deliverables">آنچه از مشاور حقیقی / حقوقی (آژانس) می خواهید (Deliverables)</label>
-                        <textarea id="Deliverables" cols="40" rows="5" ></textarea>
-                    </div>
-                    <div class="focusTextarea " id="item22">
-                        <label class="labelArea" for="Deadline">
-                            محدودیت های زمانی (Timing & Deadline)</label>
-                        <textarea id="Deadline" cols="40" rows="5" ></textarea>
-                    </div>
-                    <div class="focusTextarea " id="item33">
-                        <label class="labelArea margini33" for="Budget">
-                            بودجه در دسترس (Budget)
-                        </label>
-                        <div class="parent divBudget">
-                            <i class="icon fas fa-money-bill-alt"></i>
-                            <input type="text" class="inputText" id="Budget1" placeholder="قطعی (تومان)">
+    
+    
+        <div class="container" id="3">
+            <div class="signup">
+                <h2>بازار</h2>
+                <p class="pForm beSmallFont" style="font-weight:500; ">
+                    <i class="fas fa-caret-square-down"></i>
+                     رقبای اصلی شناخته شده (Main Competitors) </p>
+    
+                <div class="formMargini">
+                    <div class="gridMarket">
+                        <div class="focusTextarea ">
+                            <label for="enemy1" class="" ><i class="fas fa-caret-left"></i>نام رقیب ۱ :</label>
+                            <input name="entry.113641977" type="text" id="enemy1" class="inputText margin_bottom_Textarea" placeholder="نام رقیب"><br>
+                            <textarea id="Attributes1" cols="42" rows="5" placeholder="ویژگی ها و ادعاها"></textarea>
                         </div>
-
-                        <div class="parent divBudget">
-                            <i class="icon far fa-money-bill-alt"></i>
-                            <input type="text" class="inputText" id="Budget2" placeholder="حدودی (تومان)">
+                        <div class="focusTextarea ">
+                            <label for="enemy2" class="" ><i class="fas fa-caret-left"></i>نام رقیب ۲ :</label>
+                            <input type="text" id="enemy2" class="inputText margin_bottom_Textarea" placeholder="نام رقیب"><br>
+                            <textarea id="Attributes2" cols="42" rows="5" placeholder="ویژگی ها و ادعاها"></textarea>
                         </div>
-
+                        <div class="focusTextarea ">
+                            <label for="enemy3" class="" ><i class="fas fa-caret-left"></i>نام رقیب ۳ :</label>
+                            <input type="text" id="enemy3" class="inputText margin_bottom_Textarea" placeholder="نام رقیب"><br>
+                            <textarea id="Attributes3" cols="42" rows="5" placeholder="ویژگی ها و ادعاها"></textarea>
+                        </div>
+                        <div class="focusTextarea ">
+                            <label for="enemy4" class="" ><i class="fas fa-caret-left"></i>نام رقیب ۴ :</label>
+                            <input type="text" id="enemy4" class="inputText margin_bottom_Textarea" placeholder="نام رقیب"><br>
+                            <textarea id="Attributes4" cols="42" rows="5" placeholder="ویژگی ها و ادعاها"></textarea>
+                        </div>
                         
                     </div>
-                    <div class="focusTextarea " id="item44">
-                        <label class="labelArea" for="Attachment">پیوست ها (Attachment)</label>
-                        <textarea id="Attachment" cols="40" rows="5" ></textarea>
+                    <div class="focusTextarea textareaGridItem ">
+                        <label for="enemy5" class="" ><i class="fas fa-caret-left"></i>نام رقیب ۵ :</label>
+                        <input type="text" id="enemy5" class="inputText margin_bottom_Textarea" placeholder="نام رقیب"><br>
+                        <textarea id="Attributes5" cols="42" rows="5" placeholder="ویژگی ها و ادعاها"></textarea>
                     </div>
-                    <div class="focusTextarea " id="item55">
-                        <label class="labelArea" for="Mandatories">محدودیت ها، الزامات و موارد اجباری و غیر قابل تغییر / گاوهای مقدس (Mandatories)
-                            <br><span class="smallText">(نام برند، لوگو، رنگ و...)</span>
-                        </label>
-                        <textarea id="Mandatories" cols="40" rows="5" ></textarea>
-                    </div>
-
-
-                    <div class="focusTextarea " id="item66">
-                        <label class="labelArea" for="Hints">نظرات، پیشنهادات و ایده های موردنظر (Hints & Comments)</label>
-                        <textarea id="Hints" cols="40" rows="5" ></textarea>
-                    </div>
- 
                 </div>
-
-            </form>
-            <div class="holder_btn">
-                <a class="anchorLink" href="#5"><button class="back_btn">بازگشت</button></a>
-                <a class="anchorLink" href="#"><button class="start_btn">ثبت نهایی</button></a>        
+                <div class="holder_btn">
+                    <a class="anchorLink" href="#2"><button type="button" class="back_btn">بازگشت</button></a>
+                    <a class="anchorLink" href="#4"><button type="button" onclick="StartProgress(Circle4);TickedCircle(Circle3)" class="start_btn">صفحه بعد</button></a>        
+                </div>
             </div>
         </div>
-    </div> -->
+    
+    
+        <div class="container" id="4">
+            <div class="signup">
+                <h2>بازار</h2>
+                <div class="formMargini">
+                    <div >
+                        <div class="focusTextarea ">
+                            <label class="labelArea" for="Other_Competitors">رقبای دیگر / فرعی (Other Competitors)</label>
+                            <textarea id="Other_Competitors" cols="45" rows="5" ></textarea>
+                        </div>
+    
+    
+    
+                        <p class="pForm" style="font-weight:500; ">
+                            <i class="fas fa-caret-square-down"></i>
+                            بازار هدف مشتریان (Customer Target) : <span class="smallText">(دسته بندی کلی مشتریان بالقوه و بالفعل)</span></p>
+    
+                        <div class="focusTextarea ">
+                            <label class="labelArea" for="Geographical">
+                                <pre><i class="fas fa-caret-left"></i>جغرافیایی و دموگرافیک:
+    <span class="smallText">(سن، جنسیت، وضعیت تاهل، طبقه اقتصادی اجتماعی، شغل، میزان تحصیلات و ...)</span></pre>
+                            </label>
+                            <textarea id="Geographical" cols="40" rows="5" ></textarea>
+                        </div>
+    
+                        <div class="flexMarket2">
+                            <div class="focusTextarea ">
+                                <label class="labelArea" for="Psychological">
+                                    <i class="fas fa-caret-left"></i>روانشناختی
+                                </label>
+                                <textarea id="Psychological" cols="40" rows="5" ></textarea>
+                            </div>
+        
+                            <div class="focusTextarea ">
+                                <label class="labelArea" for="Behavioral">
+                                    <i class="fas fa-caret-left"></i>رفتاری
+                                </label>
+                                <textarea id="Behavioral" cols="40" rows="5" ></textarea>
+                            </div>
+                        </div>
+    
+                        <div class="gridMarket2">
+                            <div class="focusTextarea ">
+                                <label class="labelArea" for="Consumers">مصرف کنندگان (Consumers)</label>
+                                <textarea id="Consumers" cols="40" rows="5" ></textarea>
+                            </div>
+                            <div class="focusTextarea ">
+                                <label class="labelArea" for="Decision_Makers">تصمیم گیرندگان (Decision Makers)</label>
+                                <textarea id="Decision_Makers" cols="40" rows="5" ></textarea>
+                            </div>
+                            <div class="focusTextarea ">
+                                <label class="labelArea" for="Recommenders">توصیه کنندگان و تاییدکنندگان (Recommenders)</label>
+                                <textarea id="Recommenders" cols="40" rows="5" ></textarea>
+                            </div>
+                            <div class="focusTextarea ">
+                                <label class="labelArea" for="KOL">رهبران فکری اصلی (KOL)</label>
+                                <textarea id="KOL" cols="40" rows="5" ></textarea>
+                            </div>
+                            <div class="focusTextarea ">
+                                <label class="labelArea" for="Further_Details">توضیحات تکمیلی در مورد وضعیت بازار، رقبا، مشتریان و...</label>
+                                <textarea id="Further_Details" cols="40" rows="5" ></textarea>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
+                <div class="holder_btn">
+                    <a class="anchorLink" href="#3"><button type="button" class="back_btn">بازگشت</button></a>
+                    <a class="anchorLink" href="#5"><button type="button" onclick="StartProgress(Circle5);TickedCircle(Circle4)" class="start_btn">صفحه بعد</button></a>        
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="container" id="5">
+            <div class="signup">
+                <h2>اهداف و استراتژی های ارتباطی</h2>
+                <div class="formMargini">
+                    <div class="gridStrategies">
+                        <div class="focusTextarea " id="item1">
+                            <label class="labelArea" for="Communication_Objective">اهداف ارتباطی (Communication Objective)</label>
+                            <textarea id="Communication_Objective" cols="40" rows="5" ></textarea>
+                        </div>
+                        <div class="focusTextarea " id="item2">
+                            <label class="labelArea" for="Brand_Personality">
+                                شخصیت و هویت برند (Brand Personality)
+                                <br><span class="smallText">(هویت و شخصیت ایده؛ آنچه میخواهیم برند را به آن بشناسند)
+                                </span>
+                            </label>
+                            <textarea id="Brand_Personality" cols="40" rows="5" ></textarea>
+                        </div>
+                        <div class="focusTextarea " id="item3">
+                            <label class="labelArea" for="Brand_Image">
+                                تصویر ذهنی فعلی برند (Brand Image)
+                                <br><span class="smallText">(آنچه که مشتریان به طور کل در مورد برند می اندیشند و می گویند)
+                                </span>
+                            </label>
+                            <textarea id="Brand_Image" cols="40" rows="5" ></textarea>
+                        </div>
+                        <div class="focusTextarea " id="item4">
+                            <label class="labelArea" for="Key_Message">لحن پیشنهادی برای پیام های ارتباطی (Key Message / Tone of Message)</label>
+                            <textarea id="Key_Message" cols="40" rows="5" ></textarea>
+                        </div>
+                        <div class="focusTextarea " id="item5">
+                            <label class="labelArea" for="Media_Recommendation">رسانه های پیشنهادی (Media Recommendation)</label>
+                            <textarea id="Media_Recommendation" cols="40" rows="4" ></textarea>
+                        </div>
+                        <div class="focusTextarea " id="item6">
+                            <label class="labelArea" for="Tools">ابزارها و رسانه های استفاده شده تا کنون (Tools & Media History)</label>
+                            <textarea id="Tools" cols="40" rows="4" ></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="holder_btn">
+                    <a class="anchorLink" href="#4"><button type="button" class="back_btn">بازگشت</button></a>
+                    <a class="anchorLink" href="#6"><button type="button" onclick="StartProgress(Circle6);TickedCircle(Circle5)" class="start_btn">صفحه بعد</button></a>        
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="container" id="6">
+            <div class="signup">
+                <h2>فرآیندهای اجرایی</h2>
+                <div class="formMargini" >
+    
+                    <div class="gridExecution">
+                        <div class="focusTextarea " id="item11">
+                            <label class="labelArea" for="Deliverables">آنچه از مشاور حقیقی / حقوقی (آژانس) می خواهید (Deliverables)</label>
+                            <textarea id="Deliverables" cols="40" rows="5" ></textarea>
+                        </div>
+                        <div class="focusTextarea " id="item22">
+                            <label class="labelArea" for="Deadline">
+                                محدودیت های زمانی (Timing & Deadline)</label>
+                            <textarea id="Deadline" cols="40" rows="5" ></textarea>
+                        </div>
+                        <div class="focusTextarea " id="item33">
+                            <label class="labelArea margini33" for="Budget">
+                                بودجه در دسترس (Budget)
+                            </label>
+                            <div class="parent divBudget">
+                                <i class="icon fas fa-money-bill-alt"></i>
+                                <input type="text" class="inputText" id="Budget1" placeholder="قطعی (تومان)">
+                            </div>
+    
+                            <div class="parent divBudget">
+                                <i class="icon far fa-money-bill-alt"></i>
+                                <input type="text" class="inputText" id="Budget2" placeholder="حدودی (تومان)">
+                            </div>
+    
+                            
+                        </div>
+                        <div class="focusTextarea " id="item44">
+                            <label class="labelArea" for="Attachment">پیوست ها (Attachment)</label>
+                            <textarea id="Attachment" cols="40" rows="5" ></textarea>
+                        </div>
+                        <div class="focusTextarea " id="item55">
+                            <label class="labelArea" for="Mandatories">محدودیت ها، الزامات و موارد اجباری و غیر قابل تغییر / گاوهای مقدس (Mandatories)
+                                <br><span class="smallText">(نام برند، لوگو، رنگ و...)</span>
+                            </label>
+                            <textarea id="Mandatories" cols="40" rows="5" ></textarea>
+                        </div>
+    
+    
+                        <div class="focusTextarea " id="item66">
+                            <label class="labelArea" for="Hints">نظرات، پیشنهادات و ایده های موردنظر (Hints & Comments)</label>
+                            <textarea id="Hints" cols="40" rows="5" ></textarea>
+                        </div>
+     
+                    </div>
+    
+                </div>
+                <div class="holder_btn">
+                    <a class="anchorLink" href="#5"><button type="button" class="back_btn">بازگشت</button></a>
+                    <a class="anchorLink" ><button id="btnSubmit" onclick="TickedCircle(Circle6); SubmitAll()" class="start_btn">ثبت نهایی</button></a>        
+                </div>
+            </div>
+        </div>
+    </form>
+
 
     <script src="./script.js"></script>
 </body>
