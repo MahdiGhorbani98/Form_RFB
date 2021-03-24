@@ -8,38 +8,58 @@ let btnSubmit = document.querySelector('#btnSubmit');
 let personal_info0 = document.querySelector('.personal_info0')
 btnSubmit.addEventListener('click' , validSubmit)
 
-
 function validSubmit(){
+    let access = 0;
+
     if(role.value === ""){
         valid2.style.display = "block";
         role.style.background = "#ffcdd2"
         personal_info0.scrollIntoView()
+    }else{
+        access += 1;
     }
     if(address.value === ""){
         valid3.style.display = "block";
         address.style.background = "#ffcdd2"
         personal_info0.scrollIntoView();
+    }else{
+        access += 1;
     }
     if(phone_number.value === "" || isNaN(phone_number.value)){
         valid4.style.display = "block";
         phone_number.style.background = "#ffcdd2"
         personal_info0.scrollIntoView();
+    }else{
+        access += 1;
     }
     if(mail.value === ""){
         valid5.style.display = "block";
         mail.style.background = "#ffcdd2"
         personal_info0.scrollIntoView();
+    }else{
+        access += 1;
     }
     if(name1.value === ""){
         valid1.style.display = "block";
         name1.style.background = "#ffcdd2"
         personal_info0.scrollIntoView()
+    }else{
+        access += 1;
     }
 
-
-
+    if(access === 5)
+    {
+        document.getElementById("form1").submit();
+    }else{
+        prevent();
+    }
 
 }
+
+let prevent = btnSubmit.addEventListener('click' , function n(e){
+    e.preventDefault();
+})
+
 
 function DestroyValid()
 {
@@ -85,5 +105,6 @@ function TickedCircle(element){
 ////////////////////////////////////////Submit/////////////////////////////////////////////
 
 function SubmitAll(){
-    document.getElementById("form1").submit();
+    console.log(access);
+
 }

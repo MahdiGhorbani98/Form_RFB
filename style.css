@@ -182,6 +182,7 @@ h1{
     outline: none;
     border: none;
     cursor: pointer;
+
 }
 .start_btn:hover{
     background-color: #ec407a;
@@ -607,6 +608,8 @@ label{
 .anchorLink{
     text-decoration: none;
     color: white;
+    -webkit-tap-highlight-color: transparent;
+
 }
 
 
